@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1a1f8d3287.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="logo"><span style="color: #94392f;">Ragi </span>Umesh</h1>
+            <ul id="sideMenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" >Contact</a></li>
+                <i class="fas fa-times" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p style="color: #ffffff;">MERN Full Stack Developer</p>
+            <h1>Hi, I'm <span>Umesh Ragi</span>.<br> From India.</h1>
+        </div> 
+    </div>
+</div>
+<!-- --------------About-------------------------------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/User.jpeg" class="user-image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p style="color: #a99d93;"">Enthusiastic and resourceful IT fresher with hands-on experience in web development, specializing in front-end technologies. Skilled in creating responsive and user-friendly interfaces using HTML, CSS, and JavaScript. Strong problem-solving abilities with a keen eye for design and functionality. Effective communicator and team player, eager to learn and adapt to new technologies. Passionate about building dynamic web applications and enhancing user experiences.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li class="text"><span>MERN Full Stack</span><br>Developing Frontend, Backend, Projects</li>
+                        <li class="text"><span>Web Development</span><br>Web app Development</li>
+                        <li class="text"><span>Frontend Development</span><br>Developing User interface Designs</li>
+                        <li class="text"><span>SQL</span><br>Creating and Manipulating Databases</li>
+                        <li class="text"><span>Ui/Ux</span><br>Designing User interface Designs</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li class="text"><span>08/2024 - Current</span><br>MERN Full Stack Traning at NxtWave Institute</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li class="text"><span>B.Tech</span><br>Information Technology, at BVRIT</li>
+                        <li class="text"><span>Diploma</span><br>Computer Engineering, at SCCL Polytechnic</li>
+                        <li class="text"><span>Tenth(SSC)</span><br>Sachdeva School of Excellence</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------Services----------------------------- -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Development</h2>
+                <p>I offer professional MERN full stack web development services to build modern, responsive, and scalable web applications using MongoDB, Express.js, React.js, and Node.js. From crafting interactive user interfaces on the frontend to developing secure backend APIs and integrating powerful NoSQL databases, I handle the complete development cycle. My services include full CRUD operations, user authentication (JWT or OAuth), API development, and deployment to platforms like Vercel, Netlify, or AWS. Whether you need a startup MVP, business website, e-commerce platform, or custom dashboard, I deliver clean, well-documented code with performance and usability in mind. Optional features like admin panels and ongoing support can also be included based on your project needs.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-window-restore"></i>
+                <h2>Web Design and Layouts</h2>
+                <p>I provide professional web design and layout services tailored for MERN full stack development, focusing on creating visually appealing, user-friendly, and responsive interfaces using modern design principles. With React.js as the frontend framework, I craft clean and intuitive UI layouts that enhance user experience across all devices. My designs are optimized for performance, accessibility, and seamless integration with backend services built using Node.js and Express.js. Whether you're building a landing page, dashboard, e-commerce site, or custom web app, I ensure the layout is both functional and visually aligned with your brand. Using tools like Tailwind CSS, Bootstrap, and Figma (for mockups if needed), I deliver pixel-perfect, component-based designs ready for full stack integration.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-figma"></i>
+                <h2>Ui/Ux Designs</h2>
+                <p>I offer professional UI/UX design services focused on creating intuitive, visually engaging, and user-centered digital experiences. By combining aesthetic design with usability principles, I craft interfaces that are not only beautiful but also functional and easy to navigate. My process involves user research, wireframing, prototyping, and high-fidelity mockups to ensure every element enhances the user journey. Whether you're building a web or mobile app, landing page, or dashboard, I design with responsiveness and accessibility in mind. Using tools like Figma, Adobe XD, or Sketch, I deliver design systems and assets that are developer-ready and aligned with your brand identity, ensuring a seamless and impactful user experience.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------------------Projects---------------------- -->
+
+<div id="projects">
+    <div class="container">
+        <h2 class="sub-title">My Projects</h2>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/Project-1.png">
+                <div class="layer">
+                    <h3>Simple Portfolio</h3>
+                    <p>In this small project, you'll build out your social link-sharing profile.</p>
+                    <a href="https://umesh-219.github.io/My-Portfolio/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Project-2.jpeg">
+                <div class="layer">
+                    <h3>Social Profile</h3>
+                    <p>In this small project, you'll build out your social link-sharing profile.</p>
+                    <a href="https://umesh-219.github.io/Social-links-profile/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- ---------------------Contact--------------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>umeshragi789@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>7801066491</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/umesh_ragi/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Umesh-219"><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://telegram.org/apps"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+                <a href="Images/Umesh CV.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="E-Mail" placeholder="Your E-Mail" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Ragi.Umesh. Made with <i class="fa-solid fa-heart"></i> TechApps</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    var menu = document.getElementById("sideMenu");
+
+    function openMenu(){
+        menu.style.right = "0"
+        console.log("Hello");
+    }
+    function closeMenu(){
+        menu.style.right = "-200px"
+    }
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw5WA57ZnQQ9mgxrPmW0MBrgS_BvosW5kRLRw9rPpHvwIyZ9FEnC6B9VIn7YHEGCb0I/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent Successfully";
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },2000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
